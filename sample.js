@@ -10,7 +10,7 @@
 
 
 
-function button1(){
+function button_1(){
 	canvas = document.getElementById('myCanvas1');
 	if (canvas.getContext){
 		ctx1 = canvas.getContext('2d');
@@ -20,7 +20,7 @@ function button1(){
 	startAngle = 0;		endAngle = Math.PI*2;
 	anticlockwise = true;
 	ctx1.arc(x_pos,y_pos,radius,startAngle,endAngle,anticlockwise);
-	ctx1.fillStyle = "rgba(20,20,20,0,5)";
+	ctx1.fillStyle = "red";
 	ctx1.fill();
 }
 
