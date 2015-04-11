@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<script type="text/javascript" src="sample.js"></script>
+</head>
+
+
+<body>
+<script>
+	var stop2;
+	function exec_interval(){
+		console.log("exec!!");
+		stop2 = setInterval("spring()", 30);
+	}
+	function stop_interval() {
+		if (stop2)
+			clearInterval(stop2);
+		console.log("stop!!");
+	}
+</script>
+
+<h1>index pages</h1>
+<p>this is the page for HACK U KOSEN by Team "MYCALJACKSON".</p>
+
+
+<form action="test_php.php" method="get">
+    お名前<input type="text" name="name">
+    <input type="submit" value="送信">
+</form>
+
+
+<form action="#">
+<input id="button1" type="button" value="button1" onclick="button_1();">
+<!-- <input id="button2" type="button" value="button2" onclick="button2();"> -->
+<!-- <input id="button3" type="button" value="button3" onclick="button3();"> -->
+<!-- <input id="button4" type="button" value="button4" onclick="button4();"> -->
+<!-- <input id="button5" type="button" value="button5" onclick="button5();"> -->
+<!-- <input id="button6" type="button" value="button6" onclick="button6();"> -->
+</form>
+
+
+<canvas id="myCanvas1" width="600" height="200"></canvas>
+
+
+</body>
+</html>
